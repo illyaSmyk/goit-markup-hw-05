@@ -700,7 +700,7 @@ a.logo_linkblue {
 .form-checkbox-input:checked + .form-checkbox-label .custom-checkbox {
   background-color: var(--primary-accent-color);
   border: none;
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 .privacy-link {
