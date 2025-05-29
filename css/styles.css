@@ -533,7 +533,7 @@ margin-left: 16px;
 .close-btn:hover,
 .close-btn:focus {
     fill: #FFFFFF;
-    background-color: var(--primary-accent-color);
+    background-color: #404bbf;
     border: none;}
 .modal-slogan {
     width: 360px;
@@ -634,8 +634,8 @@ margin-left: 16px;
 }
 .form-checkbox-input:checked+.form-checkbox-label .custom-checkbox {
     background-color: var(--primary-accent-color);
-    border-color: none;
-    fill: var((--section-bg-color));
+    border: none;
+    fill: #F4F4FD;
 }
 .form-checkbox-input:focus+.form-checkbox-label .custom-checkbox {
     outline: 2px solid #0000ff80;
