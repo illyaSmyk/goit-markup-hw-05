@@ -437,7 +437,7 @@ height: 24;}
 .footer-social-list-link:hover,
 .footer-social-list-link:focus { background-color: #31d0aa;}
 
-.form-footer-subscribe {
+.footer-form-subscribe {
     display: flex;
     gap: 24px;
 }
