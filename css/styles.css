@@ -632,12 +632,12 @@ margin-left: 16px;
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-checkbox:checked+.form-checkbox-label .custom-checkbox {
+.form-checkbox-input:checked+.form-checkbox-label .custom-checkbox {
     background-color: var(--primary-accent-color);
     border-color: var(--primary-accent-color);
     fill: #ffffff;
 }
-.form-checkbox:focus+.form-checkbox-label .custom-checkbox {
+.form-checkbox-input:focus+.form-checkbox-label .custom-checkbox {
     outline: 2px solid #0000ff80;
 }
 .form-link {line-height: 133%;
