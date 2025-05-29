@@ -481,6 +481,10 @@ height: 24;}
 .footer-form .footertext {
     margin-bottom: 16px;
 }
+.footer-icon {
+margin-left: 16px;
+
+}
 
                             /*back-drop*/ 
 .backdrop {
