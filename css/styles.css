@@ -237,7 +237,7 @@ text-align: left;}
 margin: auto;
 padding: 120px 0;
 background-color:var(--section-bg-color);
-max-width: 1440px;}
+}
 
 .team-section .container {
 display: flex;
@@ -278,7 +278,7 @@ font-size: 20px;}
 display: flex;
 gap: 24px;
 justify-content: center;
-padding-top: 8px;
+margin-top: 8px;
 }
 .social-list-link {
 display: flex;
@@ -365,10 +365,16 @@ letter-spacing: 0.02em;
 
 .page-footer {
 background-color: #2e2f42;
-max-width: 1440px;
 margin: auto;
 padding: 100px 0;
 }
+.page-footer .container {
+    display: flex;
+    align-items: baseline;
+}
+.footer-left {margin-right: 120px;} 
+.footer-right {margin-right: 132px;}
+
 
 .logo_linkblue {
 display: inline-block;
@@ -407,10 +413,8 @@ text-decoration: none;
 .no-hover {color: inherit; }
 .white:hover {color: #404bbf;}
 
-.page-footer .container {display: flex;
-align-items: baseline}
-.footer-left {margin-right: 120px;}
-.footer-right {margin-right: 80px;}
+
+
 .footer-right .footertext {margin-bottom: 16px;} 
 .footer-social-link {
     display: flex;
@@ -543,7 +547,6 @@ margin-left: 16px;
     text-align: center;
     color: #2E2F42;
     margin-bottom: 16px;
-    margin-top: 72px;
 }
 .label {
     display: block;
@@ -557,17 +560,15 @@ margin-left: 16px;
 
 .form-field {            
     margin-bottom: 8px;
-    background-color: rgba(46, 47, 66, 0.4;
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1));
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field-comment {margin-bottom: 16px;
-    background-color: rgba(46, 47, 66, 0.4;
-            opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1));}
-.form-input-wrapper {
-    position: relative;
-}
+.form-field-comment {
+    margin-bottom: 16px;
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.form-input-wrapper {position: relative;}
 .form-input {
     width: 100%;
     height: 40px;
@@ -577,7 +578,19 @@ margin-left: 16px;
     background-color: transparent;
     outline: transparent;
     padding-left: 38px;       
-    outline: transparent;}
+    }
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: none;
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus+.form-icon {
+    fill: #4d5ae5;
+}
 
 .form-textarea {
     width: 100%;
@@ -593,7 +606,7 @@ margin-left: 16px;
     outline: transparent;
     padding: 8px 16px;
     transition: border-color var(--primary-transition);
-    margin-bottom: 16px;          /*?????????????*/
+    margin-bottom: 16px;         
 }
 .form-textarea::placeholder {
         font-weight: 400;
@@ -601,22 +614,19 @@ margin-left: 16px;
         line-height: 14px;
         letter-spacing: 4%;
 }
-.form-textarea:focus {
-    border-color: #4D5AE5;
-}
-.form-input:focus {
-    border-color: #4D5AE5;;
-}
+.form-textarea:focus {border-color: #4D5AE5;}
+.form-input:focus {border-color: #4D5AE5;}
 
+        /*CHECKBOX*/
 
 .form-checkbox {margin-bottom: 24px;}
-
 .form-checkbox-label {
     font-weight: 400;
     font-size: 12px;
     line-height: 117%;
     letter-spacing: 0.04em;
-    color:#757575;}
+    color: #8e8f99;}
+
 .custom-checkbox {
     display: inline-flex;
     justify-content: center;
@@ -636,33 +646,22 @@ margin-left: 16px;
     background-color: var(--primary-accent-color);
     border: none;
     fill: #F4F4FD;
-}
+} 
+/*
 .form-checkbox-input:focus+.form-checkbox-label .custom-checkbox {
-    outline: 2px solid #0000ff80;
-}
-.form-link {line-height: 133%;
+    outline: 2px solid #4D5AE5; 
+} */
+.privacy-link {
+    line-height: 133%;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: var(--iris);
+    color: #4d5ae5;
     margin-bottom: 24px;}
-.form-icon {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    fill: none;
-    fill: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-checkbox-icon {transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-.form-input:focus+.form-icon {
-    fill: #4d5ae5;
-}
+.privacy-link:hover,
+.privacy-link:focus {color:#404bbf;}
 
-.form-link {
-    color:#4d5ae5;
-    text-decoration: underline;
-}
+.form-checkbox-icon {transition: fill  250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 .submit-btn {
     display: block;
     margin: 0 auto;
