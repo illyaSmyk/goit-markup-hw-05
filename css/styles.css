@@ -404,7 +404,7 @@ main {
   margin-right: 120px;
 }
 .footer-right {
-  margin-right: 132px;
+  margin-right: 80px;
 }
 .footer-form {
   margin-left: auto;
@@ -533,7 +533,7 @@ a.logo_linkblue {
   margin-left: 16px;
 }
 /*back-drop*/
-.backdrop {
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -547,7 +547,7 @@ a.logo_linkblue {
   pointer-events: none;
 }
 
-.backdrop.is-open {
+.modal-overlay.is-open {
   opacity: 0;
   pointer-events: auto;
 }
